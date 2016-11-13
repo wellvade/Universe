@@ -1,5 +1,17 @@
-n = int(input('year'))
-if ((n % 4 == 0) and (n % 100 != 0) or (n % 400 == 0)):
-    print ('Вискоксный')
-else:
-    print ('Обычный')
+a = int(input('number one='))
+b = int(input('number two='))
+c = str(input('operation'))
+if c == '+':
+    print (a + b)
+elif c == '-':
+    print (a - b)
+elif c == '*':
+    print (a * b)
+elif c == 'pow':
+    print (a ** b)
+elif c == '/':
+    print ('Деление на ноль!' if b == 0 else a / b)
+elif c == 'div':
+    print ('Деление на ноль!' if b == 0 else a // b)
+elif c == 'mod':
+    print ('Деление на ноль!' if b == 0 else a % b)
